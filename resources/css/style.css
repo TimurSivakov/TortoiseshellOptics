@@ -103,7 +103,7 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 533px) {
   .main-part {
     height: 17rem;
     background-position: 20%;
@@ -114,7 +114,9 @@ nav a {
     display: flex;
     position: relative;
     top: 9rem;
-    margin: auto;
+    left: 0;
+    margin-right: 0rem;
+    /* margin-left: auto; */
   }
 
   .slogan h1 {
@@ -129,6 +131,10 @@ nav a {
   }
 
   nav span {
+    display: none;
+  }
+
+  .name span {
     display: none;
   }
 
@@ -171,14 +177,23 @@ img {
   line-height: 1.4;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 533px) {
   .advantages {
-    /* height: 8rem;
-    display: flex;
-    justify-content: center;
-    margin: 3rem auto; */
+    margin-top: 3.77rem;
     flex-wrap: wrap;
-}
+    width: 200px;
+  }
+
+  .boxes p {
+    font-size: 0.77rem;
+  }
+
+  #image2, #image3 {
+    padding-top: 1.54rem;
+  }
+
+
+
 }
 /* articles */
 
@@ -220,19 +235,38 @@ img {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 533px) {
   .articles {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3.77rem;
+  }
+
+  .yeah {
+    width: 100%;
+    margin-right: 0;
   }
 
   .container2 {
-    margin-top: 13rem;
+    margin-top: 10rem;
   }
 
   .yeah h2 {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+
+  .yeah p {
+    margin-left: 0.2777rem;
+    font-size: 0.77rem;
+}
+
+  #first {
+    margin-bottom: 4rem;
   }
 }
 
@@ -264,8 +298,18 @@ footer
   .footer-bar {
     width: 100%;
   }
+}
 
-  /* .footer-name img {
-    padding-left: 9.3rem;
-  } */
+@media only screen and (max-width: 533px) {
+  .footer-bar {
+   justify-content: center;
+  }
+
+  .footer-name span {
+    display: none;
+  }
+
+  .footer-name img {
+    padding: 4rem 1rem;
+  }
 }
